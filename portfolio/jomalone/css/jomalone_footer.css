@@ -1,0 +1,89 @@
+.foot-wrap .foot-top {
+	width: 90%;
+	max-width: 1800px;
+	min-width: 1200px;
+	margin: 0 auto;
+	border-top: 1px solid #1c1c1c;
+}
+.foot-top .foot-in {
+	max-width: 1280px;
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+.foot-left .foot-nav {
+	width: 700px;
+	display: flex;
+	justify-content: space-between;
+}
+.foot-nav-li a:hover {
+	border-bottom: 1px solid #1c1c1c;
+} 
+.foot-nav-li > a > span {
+	display: block;
+	font-family: 'LarsMalonePro-Bold';
+	font-weight: bold;
+	font-size: 18px;
+	color: #1c1c1c;
+	margin-bottom: 50px;
+}
+.foot-nav-li > ul li > a > span {
+	display: inline-block;
+	font-family: 'LarsMalonePro-Regular';
+	font-weight: medium;
+	font-size: 16px;
+	color: #1c1c1c;
+	margin-bottom: 30px;
+}
+.foot-right .foot-sign p {
+	font-family: 'LarsMalonePro-Bold';
+	font-weight: bold;
+	font-size: 18px;
+	color: #1c1c1c;
+	margin-bottom: 50px;
+}
+.foot-right .foot-sign input {
+	width: 300px;
+	color: #c4c5c3;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #1c1c1c
+}
+.foot-bot {
+	background-color: #1c1c1c;
+}
+.foot-bot .foot-in > a > img {
+	width: 190px;
+}
+.foot-bot .foot-in {
+	text-align: center;
+}
+.foot-bot .foot-in .foot-ico > ul {
+	width: 160px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;s
+}
+.foot-ico li a img {
+	width: 16px;
+}
+.foot-bot-txt {
+	padding: 30px 0 50px;
+}
+.foot-bot-txt > ul {
+	width: 610px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.foot-bot-txt > ul li span {
+	display: inline-block;
+	font-family: 'LarsMalonePro-Regular';
+	font-weight: medium;
+	font-size: 12px;
+	color: #f8f8f6;
+
+}

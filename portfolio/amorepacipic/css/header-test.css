@@ -1,0 +1,491 @@
+#wrap {
+	max-width: 1920px;
+	width: 100%;
+	position: relative;
+}
+a {
+	text-decoration: none;
+	display: block;
+}
+li {
+	list-style: none;
+}
+img {
+	width: auto;
+}
+header {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 90;
+}
+header::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100px;
+	width: 100%;
+	background-color: #111;
+	opacity: 0.3;
+
+}
+header:hover::before {
+	display: none;
+}
+.h-container {
+	position: relative;
+
+}
+.logo > a > img {
+	width: 100%;
+}
+.logo > a {
+	display: block;
+	width: 200px;
+}
+header .btn a {
+	position: relative;
+	display: inline-block;
+	border: 1px solid #111;
+	border-radius: 1em;
+	width: 190px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	overflow: hidden;
+	color: #111;
+	font-family: 'Arita Sans', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+}
+header .btn a:hover > span {
+	position: relative;
+	font-weight: bold;
+	color: #fff;
+	z-index: 30;
+}
+header .btn a::after {
+	content: "";
+	position: absolute;
+	transition: 0.3s;
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #fb7397;
+}
+header .btn a:hover::after {
+	width: 100%;
+}
+header:hover {
+	background-color: #fb7397;
+}
+.h-in {
+	display: flex;
+	justify-content: space-between;
+	width: 95%;
+	margin: 0 auto;
+	height: 100px;
+	align-items: center;
+}
+.logo img {
+	width: 250px;
+}
+.nav-depth {
+	display: none;
+	background-color: #f5f5f5;
+	position: absolute;
+	top: 100px;
+	left: 0;
+	width: 100%;
+	padding-bottom: 100px;
+}
+.nav-depth.on {
+	display: block;
+}
+.nav-depth-in {
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+}
+.nav-sub-left {
+	width: 350px;
+	margin-left: 5%;
+}
+.nav-sub-right {
+	width: 60%;
+}
+.nav-sub-left > p {
+	font-family: 'Arita Sans', sans-serif;
+	font-weight: bold;
+	color: #111;
+	font-size: 36px;
+	margin: 50px 0 30px;
+}
+.nav-sub-left > span {
+	display: block;
+	font-family: 'Arita Dotum 4.0';
+	font-weight: 500;
+	color: #878787;
+	font-size: 16px;
+	line-height: 1.4;
+	margin-bottom: 50px;
+}
+.navi > nav > ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navi-tit {
+	height: 100px;
+}
+.navi-tit > a {
+	font-family: 'Arita Sans', sans-serif;
+	font-weight: bold;
+	color: #fff;
+	font-size: 18px;
+	padding: 20px;
+	position: relative;
+	line-height: 70px;
+}
+.navi-tit > a::after {
+	content: "";
+	width: 0%;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	transition: 0.3s;
+}
+.navi-tit > a:hover::after {
+	width: 50%;
+	opacity: 1;
+
+}
+.h-line {
+	margin: 50px 50px 0 50px;
+	width: 1px;
+	height: 250px;
+	background-color: #c4c5c3;
+}
+.nav-sub {
+	display: flex;
+	margin-top: 50px;
+	width: 100%;
+}
+.nav-sub li {
+	margin: 0 30px;
+}
+.nav-sub li > a {
+	font-family: 'Arita Sans', sans-serif;
+	font-weight: bold;
+	color: #111;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+.nav-sub-li ul {
+	text-align: left;
+	width: 100%;
+}
+.nav-sub-li ul li {
+	margin: 0;
+}
+.nav-sub-li ul li > a {
+	margin: 15px 0;
+	font-family: 'Arita Sans', sans-serif;
+	font-weight: 500;
+	color: #878787;
+	font-size: 16px;
+}
+.nav-sub-li ul li:hover > a {
+	color: #111;
+	font-weight: bold;
+}
+.inv-info {
+	padding-bottom: 25px;
+	margin-bottom: 25px; 
+}
+.inv-info.group {
+	margin-bottom: 0;
+}
+.nav-inv-li > ul {
+	padding: 20px;
+	background-color: #fff;
+}
+.nav-inv-li > ul li > span {
+	display: block;
+	font-family: 'Arita Dotum 4.0';
+	font-weight: bold;
+	color: #878787;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+.inv-info > p {
+	font-family: 'Arita Dotum 4.0';
+	font-weight: bold;
+	color: #111;
+	font-size: 24px;
+	margin: 30px 0 20px;
+}
+.inv-info > img {
+	width: 18px;
+	margin-right: 3px;
+}
+.inv-info > span {
+	font-family: 'Arita Sans', sans-serif;
+	font-weight: 500;
+	color: #005395;
+	font-size: 12px;
+}
+.inv-info.group > span {
+	font-family: 'Arita Sans', sans-serif;
+	font-weight: 500;
+	color: #878787;
+	font-size: 12px;
+}
+.nav-brands-tit {
+	margin-top: 50px;
+}
+.nav-brands-tit.brands {
+	position: relative;
+}
+.nav-brands-tit > li > a {
+	font-family: 'Arita Dotum 4.0';
+	font-weight: 500;
+	color: #878787;
+	font-size: 18px;
+	margin-bottom: 30px;
+	position: relative;
+	width: 150px;
+}
+.nav-brands-tit > li:hover > a, .nav-brands-tit > li.on > a {
+	font-weight: bold;
+	color: #111;
+}
+.nav-brands-tit > li:hover > a::after, .nav-brands-tit > li.on > a::after {
+	content: "";
+	background: url(../img/main/arrow-next-b.png) no-repeat 0 0 / 100%;
+	position: absolute;
+	right: -5%;
+	width: 16px;
+	height: 16px;
+}
+.nav-brands-sub {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    display: none;
+}
+li.on > .nav-brands-sub {
+	display: block;
+}
+.nav-brands-sub li {
+	padding-bottom: 20px;
+}
+.nav-brands-sub li a {
+	font-family: 'Arita Dotum 4.0';
+	font-weight: 300;
+	color: #878787;
+	font-size: 16px;
+}
+.nav-brands-sub li:hover a {
+	color: #111;
+	font-weight: 500;
+}
+.brands-sub-in {
+	display: flex;
+}
+.brands-sub-in ul {
+	margin-right: 50px;
+}
+.ham {
+	display: none;
+}
+.h-ico ul {
+	display: flex;
+	justify-content: space-between;
+	width: 80px;
+	align-items: center;
+}
+.h-ico ul > li img {
+	width: 24px;
+} 
+.m-header {
+	display: none;
+}
+
+@media (max-width: 1280px) {
+	header::before {
+		height: 70px;
+	}
+	.navi {
+		display: none;
+	}
+	.logo img {
+		width: 200px;
+	}
+	.ham {
+		display: block;
+	}
+	.h-in {
+		height: 70px;
+	}
+	.m-header {
+		display: none;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+	}
+	/*.m-header::before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}*/
+	.m-header.on {
+		display: block;
+	}
+	.m-header-wrap {
+		position: relative;
+		width: 80%;
+		background-color: #f5f5f5;
+		height: 100%;
+		margin-left: auto;
+		max-width: 360px;
+	}
+	/*.m-nav-depth {
+		display: none;
+	}*/
+	.m-header button img {
+		width: 24px;
+	}
+	.m-logo img {
+		width: 150px;
+	}
+	.m-header-in {
+		padding: 30px;
+		box-sizing: border-box;
+		height: 100%;
+	}
+	.m-nav-top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.m-nav > ul {
+		margin-top: 100px;
+	}
+	.m-nav > ul > li {
+		padding: 20px 0; 
+		margin-bottom: 10px;
+		border-bottom: 1px solid #c4c5c3;
+	}
+	.m-nav > ul > li > a {
+		font-family: 'Arita Sans', sans-serif;
+		font-weight: 700;
+		color: #111;
+		font-size: 18px;
+	}
+	.m-nav-depth {
+		display: none;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 80%;
+		max-width: 350px;
+		background-color: #f5f5f5;
+	}
+	.m-nav-depth.on {
+		display: block;
+	}
+	
+	.m-nav-depth-in {
+		position: relative;
+		height: 100%;
+	}
+	.m-nav-depth-wrap {
+		padding: 30px;
+	}
+	.m-nav-depth-wrap > a {
+		font-family: 'Arita Sans', sans-serif;
+		font-weight: bold;
+		color: #111;
+		font-size: 24px;
+		padding-bottom: 20px;
+		margin: 100px 0 50px;
+		border-bottom: 1px solid #c4c5c3;
+	}
+	.m-nav-depth-sub li {
+		padding: 20px 0;
+	}
+	.m-nav-depth-sub li > a {
+		font-family: 'Arita Sans', sans-serif;
+		font-weight: 500;
+		color: #111;
+		font-size: 16px;
+	}
+	
+	.m-nav-sub {
+		display: none;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 80%;
+		max-width: 340px;
+		background-color: #f5f5f5;
+		overflow-y: auto;
+
+	}
+	.m-nav-sub.on {
+		display: block;
+	}
+	.m-nav-sub-in {
+		padding: 30px;
+	}
+	.m-nav-sub-in > a {
+		font-family: 'Arita Sans', sans-serif;
+		font-weight: bold;
+		color: #111;
+		font-size: 16px;
+		padding-bottom: 20px;
+		margin: 100px 0 50px;
+		border-bottom: 1px solid #c4c5c3;
+	}
+	.m-nav-sub-li {
+		display: none;
+	}
+	.m-nav-sub.on .m-nav-sub-li {
+		display: block;
+	}
+	.m-nav-sub-li > ul > li > a {
+		font-family: 'Arita Sans', sans-serif;
+		font-weight: 300;
+		color: #878787;
+		font-size: 16px;
+	}
+	.btn-txt {
+		font-family: 'Arita Sans', sans-serif;
+		font-weight: bold;
+		color: #111;
+		font-size: 18px;
+	}
+	.nav-inv-li > ul {
+		background-color: transparent;
+	}
+}

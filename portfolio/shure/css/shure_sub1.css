@@ -1,0 +1,143 @@
+#wrap {
+	max-width: 1920px;
+	width: 100%;
+	/*min-width: 1240px;*/
+	min-width: 340px;
+}
+a {
+	text-decoration: none;
+	display: block;
+}
+li {
+	list-style: none;
+}
+img {
+	width: 100%;
+}
+span {
+	display: block;
+}
+.gray-box {
+	width: 100%;
+	height: 50px;
+	background-color: #8a8b87;
+	display: flex;
+	
+}
+.gray-box .gray-box-txt {
+	display: flex;
+	max-width: 1280px;
+	width: 90%;
+	margin: 0 auto;
+	align-items: center;
+}
+.gray-box .gray-box-txt img {
+	height: 12px;
+	width: 12px;
+	margin-left: 20px;
+}
+.gray-box .gray-box-txt a span {
+	margin-left: 20px;
+}
+
+.sub1-tit {
+	text-align: center;
+	margin-top: 200px;
+	margin-bottom: 100px;
+}
+.sub1-tit h2 {
+	margin-bottom: 70px;
+}
+.sub1-tit p {
+	line-height: 24px;
+}
+
+.sec1, .sec2 {
+	max-width: 1280px;
+	width: 90%;
+	margin: 0 auto;
+}
+.sub-mg {
+	width: 100%;
+	overflow: hidden;
+}
+.sub1-1-content, .sub1-2-content {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -1.666%;
+}
+
+.sub1-content-box {
+	max-width: 407px;
+	width: 30%;
+	margin: 1.666%;
+	margin-bottom: 100px;
+	flex: 0 1 auto;
+	border-bottom: 1px solid #d4d4d4;	
+}
+.sub1-content-box .sub1-content-img {
+	position: relative;
+}
+.sub1-img-txt {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+}
+.sub1-content-img:hover .sub1-img-txt {
+	display: block;
+}
+.sub1-content-box .sub1-content-img img {
+	max-width: 407px;
+	width: 100%;
+	transition: 0.3s;
+}
+.sub1-content-box .sub1-content-img figure {
+	overflow: hidden;
+	background-color: #191919;
+}
+.sub1-content-box .sub1-content-img:hover img {
+	transform: scale(1.2);
+	opacity: 30%;
+}
+.sub1-content-box .sub1-content-txt {
+	margin-top: 30px;
+}
+.sub1-content-box .sub1-content-txt span {
+	margin-top: 20px;
+	padding-bottom: 60px;
+	letter-spacing: -0.03em;
+	line-height: 22px;
+}
+@media (max-width: 980px) {
+	.sub1-content-box {
+		width: 47%;
+		max-width: 47%;
+		margin: 1.2%;
+		margin-bottom: 100px;
+	}
+	.sub1-tit h2 {
+		font-size: 28px;
+	}
+	.sub1-tit p {
+		font-size: 12px;
+	}
+	.sub1-content-box .sub1-content-txt strong {
+		font-size: 16px;
+	}
+	.sub1-content-box .sub1-content-txt span {
+		font-size: 12px;
+	}
+	.sub1-img-txt {
+		font-size: 18px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		display: none;
+	}
+	.sub1-tit {
+		margin-top: 70px;
+	}
+}

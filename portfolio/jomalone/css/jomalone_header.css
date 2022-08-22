@@ -1,0 +1,174 @@
+#wrap {
+	max-width: 1920px;
+	width: 100%;
+	/*min-width: 1240px;*/
+}
+body {
+	background-color: #f8f8f6;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+img {
+	width: auto;
+}
+/* header */
+
+.h-top {
+	background-color: #1c1c1c;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+.h-top > a {
+	display: inline-block;
+	margin: 0 auto;
+
+}
+.h-top > a > span {
+	display: inline-block;
+	font-family: 'LarsMalonePro-Bold';
+	font-weight: bold;
+	font-size: 18px;
+	color: #fcf9ee;
+}
+.h-bot {
+	width: 100%;
+}
+.h-bot .h-in {
+	position: relative;
+}
+.h-bot .h-in .logo a > h1 {
+	background: url(../img/main/jomalone-logo.png) no-repeat 0 0 / 100%;
+	width: 200px;
+	height: 100px;
+	margin: 0 auto;
+}
+.h-bot .h-in .h-ico {
+	position: absolute;
+	top: 30px;
+	right: 5%;
+}
+.h-bot .h-in .h-ico ul {
+	display: flex;
+	justify-content: space-between;
+	width: 200px;
+	height: auto;
+}
+.h-bot .h-in .h-ico ul li a img {
+	width: 24px;
+	height: 24px;
+}
+.h-bot .h-in .h-ico ul li:nth-child(2) a img {
+	height: 24px;
+	width: auto;
+}
+/*.h-bot .h-in .h-nav {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}*/
+.h-bot .h-in .h-nav .nav {
+	max-width: 1280px;
+	width: 90%;
+	margin: 0 auto;
+/*	padding-left: 60px;*/
+	display: flex;
+	justify-content: space-around;
+}
+.h-bot .h-in .h-nav .nav li > a > span {
+	display: inline-block;
+	font-family: 'LarsMalonePro-Bold';
+	font-weight: bold;
+	font-size: 18px;
+	color: #1c1c1c;
+}
+.h-bot .h-in .h-nav .nav li > a {
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: inline-block;
+}
+.h-bot .h-in .h-nav .nav li > a::after {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 1px;
+	bottom: -10px;
+	background-color: #1c1c1c;
+	transition: 0.3s;
+	width: 100%;
+	transform: scaleX(0);
+}
+.h-bot .h-in .h-nav .nav li:hover a::after {
+	content: "";
+	transform: scaleX(1.0);
+}
+.h-bot .h-in .h-nav .nav .h-depth {
+	display: none;
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 177px;
+	z-index: 30;
+	background-color: #f8f8f6;
+}
+.h-bot .h-in .h-nav .nav .h-depth::before {
+	content: "";
+	display: block;
+	width: 90%;
+	height: 1px;
+	background-color: #bebcb4;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.h-bot .h-in .h-nav .nav .h-depth::after {
+	content: "";
+	display: block;
+	width: 90%;
+	height: 1px;
+	background-color: #bebcb4;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.h-bot .h-in .h-nav .nav .h-depth.on {
+	display: block;
+}
+.h-nav .nav .h-dept .h-depth-in {
+	margin: 50px 0;
+}
+.h-nav .nav .h-depth .h-nav-txt > a > span {
+	display: inline-block;
+	font-family: 'LarsMalonePro-Bold';
+	font-weight: bold;
+	font-size: 16px;
+	color: #1c1c1c;
+	margin-top: 20px;
+}
+.h-nav .nav .h-depth .h-nav-img a > figure {
+	width: 280px;
+	height: 280px;
+	overflow: hidden;
+}
+.h-nav .nav .h-depth .h-nav-img a > figure > img {
+	width: 100%;
+	transform: scale(1);
+	transition: 0.3s;
+}
+.h-nav .nav .h-depth .h-nav-img a:hover > figure > img {
+	transform: scale(1.2);
+}
+
+.h-depth-in ul {
+	display: flex;
+	flex-wrap: wrap;
+	width: 1280px;
+	margin: 0 auto;
+}
+.h-depth-in ul li {
+	margin: 0 20px 80px 20px;
+}
